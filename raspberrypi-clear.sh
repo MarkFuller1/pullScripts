@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-if [[ -f "/opt/prod/raspi/Personal-Website" ]]; then
+if [[ -d "/opt/prod/raspi/Personal-Website" ]]; then
     cd Personal-Website
     git pull origin master
     else
