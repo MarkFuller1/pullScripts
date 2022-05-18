@@ -8,4 +8,4 @@ if [[ -d "/opt/prod/raspi/Personal-Website" ]]; then
 fi
 
 npm i --legacy-peer-deps
-npm start &
+npm start 
