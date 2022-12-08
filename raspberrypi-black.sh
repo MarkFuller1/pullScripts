@@ -1,15 +1,13 @@
 #!/usr/bin/bash
 pwd
-if [[ -d "/opt/prod/raspi/Personal-Website-PostService" ]]; then
-    cd Personal-Website-PostService
+if [[ -d "/opt/prod/raspi/KittyKam" ]]; then
+    cd KittyKam
     pwd
     git pull origin master
     else
-    git clone https://github.com/MarkFuller1/Personal-Website-PostService.git
-    cd Personal-Website-PostService
+    git clone https://github.com/MarkFuller1/KittyKam.git
+    cd KittyKam
     pwd
 fi
 
-sudo /usr/bin/mvn clean compile package 
-
-sudo /usr/bin/java -jar -Dspring.profiles.active=prod target/IThoughtILearned-0.0.1-SNAPSHOT.jar
+sudo /usr/bin/python3 --webstreaming.py --ip 0.0.0.0 --port 80
