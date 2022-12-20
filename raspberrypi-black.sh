@@ -11,3 +11,5 @@ if [[ -d "/opt/prod/raspi/KittyKam" ]]; then
 fi
 
 sudo /usr/bin/mvn clean compile package 
+
+sudo /usr/bin/java -jar -Dspring.profiles.active=prod target/IThoughtILearned-0.0.1-SNAPSHOT.jar
