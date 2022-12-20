@@ -10,4 +10,4 @@ if [[ -d "/opt/prod/raspi/KittyKam" ]]; then
     pwd
 fi
 
-sudo /usr/bin/python3 --webstreaming.py --ip 0.0.0.0 --port 80
+sudo /usr/bin/mvn clean compile package 
