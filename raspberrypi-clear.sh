@@ -7,5 +7,4 @@ if [[ -d "/opt/prod/raspi/KittyProcessor" ]]; then
     cd KittyProcessor
 fi
 
-npm i --legacy-peer-deps
-npm start 
+npm i && npm run build && serve -s build
